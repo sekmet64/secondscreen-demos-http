@@ -1,0 +1,25 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.overlay{
+  position: absolute;
+    background-color: rgba(241, 241, 241, 0.5);;
+    padding: 3px;
+    width: 100%;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+
+#flashcontent {
+  height: 100%;
+}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <script src="static/js/lib/cookies.min.js"></script>
+    <script src="static/js/lib/jquery-2.1.0.min.js"></script>
+    <script src="static/js/lib/socket.io.min.js"></script>
+
+    <script src="static/js/youtube-remote.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+
+        <link rel="stylesheet" type="text/css" href="static/style/remote-style.css">
+
+{% endblock %}
+
+
+{% block content %}
+    <div class="controls">
+        <span id="now-playing-title"></span><br />
+
+
+        <div id="controls-row">
+            <div id="now-playing-thumbnail">
+                <img id="now-playing-thumbnail-image" src=""/>
+                <img class="now-playing-overlay" src="static/images/pause64.png"/>
+            </div>
+
+
+            <div id="now-playing-progress-bar">
+                <div id="now-playing-progress"></div>
+                <div id="now-playing-duration">
+                    <span id="now-playing-time-elapsed-text">00:00</span> /
+                    <span id="now-playing-duration-text"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br />
+
+
+<ul id="videos">
+
+</ul>
+
+<div class="footer">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com/free-icon/media-play-symbol_31128" title="Flaticon">www.flaticon.com</a></div>
+
+{% endblock %}
